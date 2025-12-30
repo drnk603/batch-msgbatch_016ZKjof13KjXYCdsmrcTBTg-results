@@ -975,9 +975,7 @@ footer hr {
   background-color: white !important;
 }
 
-.bg-dark {
-  background-color: var(--color-neutral-dark) !important;
-}
+
 
 .bg-primary {
   background-color: var(--color-primary) !important;
@@ -1623,5 +1621,27 @@ address {
   .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+}
+
+/* AUTO-FIX: bg-dark improved contrast */
+.bg-dark > * {
+  color:white!important;
+}
+
+/* AUTO-INJECTED: g-4 layout fix */
+.g-4 > * {
+  width: 100%;
+}
+
+/* --- AUTO-INJECTED: AOS mobile/tablet override --- */
+@media (max-width: 1024px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+  .c-logo__img {
+    display: none!important;
   }
 }
